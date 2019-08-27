@@ -1,0 +1,26 @@
+.user-info__button_edit {
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 24px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    box-sizing: border-box;
+    transition: All 0.8s ease;
+}
+
+.user-info__button_edit:hover {
+    color: black;
+    background-color: white;
+}
+
+.user-info__button_edit:active {
+    background-color: #1E90FF;
+}
+
+.user-info__button_edit:focus {
+    outline-color: greenyellow;
+}

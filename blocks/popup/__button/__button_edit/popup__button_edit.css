@@ -1,0 +1,8 @@
+.popup__button_edit {
+    font-size: 18px;
+    line-height: 22px;   
+}
+
+.popup__button_edit_hidden {
+    display: none;
+}

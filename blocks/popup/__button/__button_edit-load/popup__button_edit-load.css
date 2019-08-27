@@ -1,0 +1,15 @@
+.popup__button_edit-load {
+    font-size: 18px;
+    line-height: 22px;
+    outline-color: greenyellow;
+    display: none;
+    /* display: block; */
+}
+
+.popup__button_edit-load_visible {
+    display: block;
+}
+
+.popup__button_edit-load_hidden {
+    display: none;
+}

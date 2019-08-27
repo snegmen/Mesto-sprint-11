@@ -1,0 +1,5 @@
+.popup__content-picture {
+    position: relative;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}

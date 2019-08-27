@@ -1,0 +1,4 @@
+.popup__container_invalid .popup__error {
+    padding: 5px;
+    opacity: 1;
+}
