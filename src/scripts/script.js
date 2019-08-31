@@ -2,6 +2,7 @@
 import CardList from './cardlist.js';  
 import {Popup} from './popup.js';
 import {Api} from './api.js';
+import closeImage from '../images/close.svg';
 
 /*переменные*/
 const config = {
@@ -23,14 +24,14 @@ const config = {
   cardLikeWrap:`.place-card__like-wrap`,
   cohort: `cohort1`,
   token: `62ef6548-a9a1-463d-81a0-72acf196616a`,
-  server: `http://95.216.175.5`,
+  server: `https://praktikum.tk`,
   contentType: `application/json`
 
 };
 
 const popUpInnerHTML = {
   addCardUser: `<div class="popup__content">
-  <img src="./images/close.svg" alt="" class="popup__close">
+  <img src="${closeImage}" alt="" class="popup__close">
   <h3 class="popup__title">Новое место</h3>
   <form class="popup__form" name="new">
     <div class="input-container">
@@ -46,7 +47,7 @@ const popUpInnerHTML = {
   </form>
 </div>`,
   editUserInfo: `<div class="popup__content">
-  <img src="./images/close.svg" alt="" class="popup__close">
+  <img src="${closeImage}" alt="" class="popup__close">
   <h3 class="popup__title">Редактировать профиль</h3>
   <form class="popup__form" name="edit">
     <div class="popup__container">
@@ -62,11 +63,11 @@ const popUpInnerHTML = {
   </form>
 </div>`,
   showPicture: `<div class="popup__content-picture">
-    <img src="./images/close.svg" alt="" class="popup__close">
+    <img src="${closeImage}" alt="" class="popup__close">
     <img class="popup__picture" src="">
   </div>`,
   editAvatar: `<div class="popup__content">
-  <img src="./images/close.svg" alt="" class="popup__close">
+  <img src="${closeImage}" alt="" class="popup__close">
   <h3 class="popup__title">Обновить аватар</h3>
   <form class="popup__form" name="avatar">
     <div class="popup__container">
