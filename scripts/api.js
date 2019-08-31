@@ -12,14 +12,8 @@ export class Api {
         headers: this.headers
       })
       .then((res) =>  {
-        if (res.ok) return res.json();
-      })
-      .then((result) => {
-        if (result) {
-          return result;
-          } else {
-            return Promise.reject(`Ошибка`);
-        }
+        if (res.ok) { return Promise.resolve(res.json()) }
+        return Promise.reject(res.status);
       })
       .catch((err) => {
         console.log('Нет соединения с сервером', err);
