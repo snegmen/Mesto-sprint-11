@@ -1,10 +1,15 @@
 /*классы*/
-import CardList from './cardlist.js';  
-import {Popup} from './popup.js';
+import CardList from '../blocks/places-list/cardlist.js';  
+import {Popup} from '../blocks/popup/popup.js';
 import {Api} from './api.js';
 import closeImage from '../images/close.svg';
 
 /*переменные*/
+let nodeURL='https://praktikum.tk';
+if (NODE_ENV==='development') {
+    nodeURL='http://praktikum.tk';
+}
+
 const config = {
   renderContainer: `.places-list`,
 
@@ -24,7 +29,7 @@ const config = {
   cardLikeWrap:`.place-card__like-wrap`,
   cohort: `cohort1`,
   token: `62ef6548-a9a1-463d-81a0-72acf196616a`,
-  server: `https://praktikum.tk`,
+  server: nodeURL,
   contentType: `application/json`
 
 };
