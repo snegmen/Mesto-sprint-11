@@ -1,5 +1,5 @@
-import {Card} from './card.js';
-import {Api} from './api.js';
+import {Card} from '../place-card/card.js';
+import {Api} from '../../scripts/api.js';
 export default class CardList {
     constructor(config) {
       this.config = config;
