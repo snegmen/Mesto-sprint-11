@@ -2,7 +2,7 @@
 
 [Адрес страницы проекта](https://snegmen.github.io/mesto-sprint-11/)
 
-## Версия 0.1.1.
+## Версия 0.1.2
 
 ## Технологии
 + CSS, HTML, GIT, Javascript
